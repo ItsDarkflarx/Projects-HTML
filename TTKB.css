@@ -63,7 +63,7 @@ p{
 }
 
 .character1{
-	background: url(photos/character1.png) no-repeat 0 0;
+	background: url(photos/TTKB/character1.png) no-repeat 0 0;
 	background-size: 100%;
 	width: 363px;
 	height: 344px;
@@ -72,7 +72,7 @@ p{
 }
 
 .character2{
-	background: url(photos/character2.png) no-repeat 0 0;
+	background: url(photos/TTKB/character2.png) no-repeat 0 0;
 	background-size: 100%;
 	width: 309px;
 	height: 371px;
@@ -80,7 +80,7 @@ p{
 }
 
 .character3{
-	background: url(photos/character3.png) no-repeat 0 0;
+	background: url(photos/TTKB/character3.png) no-repeat 0 0;
 	background-size: 100%;
 	width: 297px;
 	height: 286px;
@@ -132,7 +132,7 @@ nav a.logo{
 	position: absolute; top: 50%; left: 0px;
 	margin-top: -20px;
 	margin-left: 30px;
-	background: url(photos/logo.png) no-repeat 0 0;
+	background: url(photos/TTKB/logo.png) no-repeat 0 0;
 	background-size: 100%;
 	overflow: hidden;
 	text-indent: -9999px;
@@ -233,7 +233,7 @@ nav ul li a{
 	position: absolute;
 	width: 45px;
 	height: 60px;
-	background: url(photos/hand.png) no-repeat 0 0;
+	background: url(photos/TTKB/hand.png) no-repeat 0 0;
 	background-size: 100%;
 	bottom: -30px;
 	left: 60%;
@@ -312,7 +312,7 @@ footer a{
 	width: 80px;
 	height: 80px;
 	background-color: #FF3300;
-	background: url(photos/close.png) no-repeat center center;
+	background: url(photos/TTKB/close.png) no-repeat center center;
 	background-size: 100%;
 	position: absolute;
 	top:-40px;
