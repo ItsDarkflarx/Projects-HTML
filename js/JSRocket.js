@@ -1,28 +1,42 @@
-var car = {
-	make: 'VW',
-	type: 'Polo',
-	color: 'blue',
-	isTurnedOn: false,
-	numberOfWheels: 4,
-	seats: [
-		'seat 1',
-		'seat 2',
-		'seat 3',
-		'seat 4'
-		],
-		turnOn: function() {
-		 	this.isTurnedOn = true;
-		 	return('done');
-		 },
-		 fly: function() {
-		 	alert('fly');
-		 },
-		 switchCar: function(isOn) {
-		 	console.log('turn car '+ isOn);
-		 	if (isOn == true) {
-		 		this.isTurnedOn = true;
-		 	} else {
-		 		this.isTurnedOn = false;
-		 	}
-		 }
-};
+var timer = null;
+var countdownNumber = 10;
+
+var changeState = function(state) {
+	document.body.className = 'body-state' + state;
+	clearInterval(timer);
+	countdownNumber = 10;
+	document.getElementById('countdown').innerHTML = countdownNumber;
+
+	if (state == 2) {
+		timer = setInterval(function() {
+			countdownNumber = countdownNumber -1;
+			document.getElementById('countdown').innerHTML = countdownNumber;
+
+			if (countdownNumber < 8 && countdownNumber >= 5 ) {
+				document.getElementById('nervous').className = 'nervous show';
+			} else {
+				document.getElementById('nervous').className = 'nervous';
+			}
+
+			if (countdownNumber < 5 && countdownNumber >= 1 ) {
+				document.getElementById('cant-wait').className = 'cant-wait show';
+			} else {
+				document.getElementById('cant-wait').className = 'cant-wait';
+			}
+
+			if (countdownNumber <= 0) {
+				changeState(3);
+			}
+		}, 700)
+	} else if (state == 3) {
+		var success = setTimeout(function() {
+			var randomNumber= Math.round(Math.random()*10)
+
+			if (randomNumber > 9) {
+				changeState(4);
+			} else {
+				changeState(5);
+			}
+		}, 2000);
+	}
+}
