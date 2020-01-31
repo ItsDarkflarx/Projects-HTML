@@ -7,9 +7,9 @@ var changeState = function(state) {
 	countdownNumber = 10;
 	document.getElementById('countdown').innerHTML = countdownNumber;
 
-	if (countdownNumber == 10) {
-		document.getElementById('nervous').className = 'nervous';
-		document.getElementById('cant-wait').className = 'cant-wait';
+	if (state == 1) {
+			document.getElementById('nervous').className = 'nervous';
+			document.getElementById('cant-wait').className = 'cant-wait';
 	}
 
 	if (state == 2) {
@@ -17,7 +17,7 @@ var changeState = function(state) {
 			countdownNumber = countdownNumber -1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
 
-			if (countdownNumber == 10) {
+			if (state == 5) {
 				document.getElementById('nervous').className = 'nervous';
 				document.getElementById('cant-wait').className = 'cant-wait';
 			}
