@@ -1,0 +1,81 @@
+body{
+	background-color: #343434;
+	margin: 0;
+}
+
+.header{
+	color: white;
+	height: 85px;
+	background-color: #252525;
+	text-align: center;
+	padding-top: 130px;
+	font-size: 35px;
+}
+
+.title{
+	color: white;
+	background-color: #2A2A2A;
+	height: 45px;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 16px;
+}
+form{
+	width: 325px;
+	margin: auto auto;
+}
+
+.info{
+	text-align: center;
+	padding-top: 55px;
+}
+
+.info .item{
+	text-align: center;
+}
+
+.info .item input[type="text"]{
+	display: block;
+    height: 40px;
+    width: 325px;
+    box-sizing: border-box;
+    padding: 15px 20px; 
+	margin-bottom: 15px;
+	background-color: #252525;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	outline: none;
+
+}
+
+.login{
+	width: 325px;
+	height: 40px;
+	border: none;
+	color: white;
+	background-color: #34EBA8;
+	border-radius: 2px;
+	cursor: pointer;
+	outline: none;
+}
+
+.reg{
+	background-color: #343434;
+    border: none;
+    color: grey;
+    margin-right: 137px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.fpw{
+	background-color: #343434;
+	border: none;
+	color: grey;
+	padding-left: 8px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+}
