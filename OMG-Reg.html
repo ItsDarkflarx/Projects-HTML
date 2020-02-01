@@ -10,19 +10,22 @@
 	<div class="title">VIDEO MANAGEMENT AND INTEGRATED SUPPORT SYSTEM</div>
 	<div class="info">
 		<form>
-			<div class="item">
-				<input type="text" placeholder="Email">
+			<div class="item em">
+				<input type="text" id="regEm" placeholder="Email">
 			</div>
-			<div class="item">
-				<input type="text" placeholder="Password">
+			<div class="item pw">
+				<input type="text" id="regPw"placeholder="Password">
 			</div>
-			<div class="item">
-				<input type="text" placeholder="Confirm Password">
+			<div class="item pw2">
+				<input type="text" id="regPw2" placeholder="Confirm Password">
 			</div>
-			<button class="login2" onclick="();">REGISTER</button>
+			<button type="button" class="registerButton" onclick="registerDetails();">REGISTER</button>
 			<input type="button" class="reg" value="Login" onclick="window.location.href='OMG-Login.html'" />
 			<button class="fpw" onclick="();">Forget Password?</button>
 		</form>
+		<p id="loginTest">   </p>
+		<p id="pwTest">  </p>
+		<p id="pw2Test"> </p>
 		<div class="sep"></div>
 		<p>Copyright &copy; 2018 Onwards Media Group Pte Ltd </p>
 	</div>

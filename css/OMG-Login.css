@@ -8,6 +8,7 @@ p{
 	text-align: center;
 	margin-top: 5px;
 	font-size: 13px;
+
 }
 
 .sep{
@@ -65,7 +66,7 @@ form{
 
 }
 
-.login{
+.loginButton{
 	width: 325px;
 	height: 40px;
 	border: none;
@@ -80,7 +81,7 @@ form{
 	background-size: 4%;
 }
 
-.login2{
+.registerButton{
 	width: 325px;
 	height: 40px;
 	border: none;
