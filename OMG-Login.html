@@ -11,15 +11,16 @@
 	<div class="info">
 		<form>
 			<div class="item em">
-				<input type="Email" name="logEm" placeholder="Email">
+				<input type="Email" id="logEm" placeholder="Email">
 			</div>
 			<div class="item pw">
-				<input type="Password" name="logPw" placeholder="Password">
+				<input type="Password" id="logPw" placeholder="Password">
 			</div>
-			<button type="button" class="loginButton" onclick="loginDetails();">LOGIN</button>
+			<input type="button" class="loginButton" onclick="loginDetails();" value="LOGIN">
 
-			<!-- // this is to open the popup (if using, dont use below) // -->
+			<!-- // this is to open the popup // -->
 			<button type="button" class="reg" onclick="showPopup();">Register</button>
+			<!-- // if using above, dont use below // -->
 			<!-- <input type="button" class="reg" value="Register" onclick="window.location.href='OMG-Reg.html'" /> -->
 
 			<button class="fpw" onclick="();">Forget Password?</button>
@@ -34,27 +35,27 @@
 			<div class="header">ONWARDS MEDIA GROUP</div>
 			<div class="title">VIDEO MANAGEMENT AND INTEGRATED SUPPORT SYSTEM</div>
 			<div class="info">
-				<form>
+				<form id="myForm">
 					<div class="item em">
-						<input type="Email" name="regEm" placeholder="Email" required>
+						<input type="Email" id="regEm" placeholder="Email">
 					</div>
 					<div class="item pw">
-						<input type="Password" name="regPw"placeholder="Password" maxlength="15" minlength="6" required>
+						<input type="Password" id="regPw"placeholder="Password" minlength="6" maxlength="15">
 					</div>
 					<div class="item pw2">
-						<input type="Password" name="regPw2" placeholder="Confirm Password" maxlength="15" minlength="6" required>
+						<input type="Password" id="regPw2" placeholder="Confirm Password" minlength="6" maxlength="15">
 					</div>
-					<button type="submit" class="registerButton" onclick="registerDetails();">REGISTER</button>
+					<input type="button" class="registerButton" onclick="registerDetails();" value="REGISTER">
 					
-					<!-- //this is to close the popup (if using, dont use below)// -->
+					<!-- // this is to open the popup (if using, dont use below) // -->
 					<button type="button" class="reg" onclick="hidePopup();">Login</button>
-
 					<!-- <input type="button" class="reg" value="Login" onclick="window.location.href='OMG-Login.html'" /> -->
+					
 					<button class="fpw" onclick="();">Forget Password?</button>
 				</form>
-				<p id="loginTest">   </p>
+				<!-- <p id="loginTest">   </p>
 				<p id="pwTest">  </p>
-				<p id="pw2Test"> </p>
+				<p id="pw2Test"> </p> -->
 				<div class="sep"></div>
 				<p>Copyright &copy; 2018 Onwards Media Group Pte Ltd </p>
 			</div>

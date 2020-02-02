@@ -9,16 +9,16 @@ var registerDetails = function() {
 	// document.getElementById('pwTest').innerHTML=(regPassword);
 	// document.getElementById('pw2Test').innerHTML=(regPassword2);
 
-	// if (regEmail == '' || regPassword == '' || regPassword2 == '') {
-	// 	alert("No Input!");
-	// } 
-	// else if (regPassword != regPassword2 || regPassword2 != regPassword) {
-	// 	alert("Wrong Password!");
-	// } 
-	// else if (regPassword == regPassword2) {
-	// 	alert("Register Successful!");
-	// } 
-
+	if (regEmail == '' || regPassword == '' || regPassword2 == '') {
+		alert("No Input!");
+	} 
+	else if (regPassword != regPassword2 || regPassword2 != regPassword) {
+		alert("Wrong Password!");
+	} 
+	else if (regPassword == regPassword2) {
+		alert("Register Successful!");
+		// document.getElementById("myForm").submit();
+	}
 }
 
 var loginDetails = function() {
