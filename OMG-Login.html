@@ -11,10 +11,10 @@
 	<div class="info">
 		<form>
 			<div class="item em">
-				<input type="text" id="logEm" placeholder="Email">
+				<input type="Email" name="logEm" placeholder="Email">
 			</div>
 			<div class="item pw">
-				<input type="Password" id="logPw" placeholder="Password">
+				<input type="Password" name="logPw" placeholder="Password">
 			</div>
 			<button type="button" class="loginButton" onclick="loginDetails();">LOGIN</button>
 
@@ -36,15 +36,15 @@
 			<div class="info">
 				<form>
 					<div class="item em">
-						<input type="text" id="regEm" placeholder="Email">
+						<input type="Email" name="regEm" placeholder="Email" required>
 					</div>
 					<div class="item pw">
-						<input type="Password" id="regPw"placeholder="Password" maxlength="15" minlength="6">
+						<input type="Password" name="regPw"placeholder="Password" maxlength="15" minlength="6" required>
 					</div>
 					<div class="item pw2">
-						<input type="Password" id="regPw2" placeholder="Confirm Password" maxlength="15" minlength="6">
+						<input type="Password" name="regPw2" placeholder="Confirm Password" maxlength="15" minlength="6" required>
 					</div>
-					<button type="button" class="registerButton" onclick="registerDetails();">REGISTER</button>
+					<button type="submit" class="registerButton" onclick="registerDetails();">REGISTER</button>
 					
 					<!-- //this is to close the popup (if using, dont use below)// -->
 					<button type="button" class="reg" onclick="hidePopup();">Login</button>

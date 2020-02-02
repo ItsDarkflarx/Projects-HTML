@@ -51,7 +51,7 @@ form{
 	text-align: center;
 }
 
-.info .item input[type="text"]{
+.info .item input[type="Email"]{
 	display: block;
     height: 40px;
     width: 325px;
